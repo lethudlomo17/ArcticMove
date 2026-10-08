@@ -1,24 +1,21 @@
-# 🚚 Arctic Move
+# Arctic Move
 
-**Move it. Track it. Delivered.**
+Move it. Track it. Delivered.
 
 Arctic Move is a Kotlin-based Android parcel delivery application designed to provide users with a simple and convenient way to book, manage, and track same-day deliveries.
 
 The application was developed using **Android Studio**, **Kotlin**, and **Jetpack Compose**, with **Room Database** used for local data persistence. REST API functionality using **Retrofit** is also being implemented to support communication between the Android application and the Arctic Move delivery service.
 
----
 
-## 📱 Project Overview
+ Project Overview
 
 Arctic Move provides a digital delivery experience where users can create an account, sign in, book a delivery, enter recipient and package information, review delivery details, confirm a delivery, view previous orders, and access delivery tracking functionality.
 
 The application focuses on providing a clean, modern and user-friendly interface while maintaining structured local data storage.
 
----
+ Features
 
-## ✨ Features
-
-### 🔐 User Authentication
+ User Authentication
 - User registration
 - User login
 - Duplicate email validation
@@ -27,7 +24,7 @@ The application focuses on providing a clean, modern and user-friendly interface
 - Persistent registered accounts
 - Logout functionality
 
-### 📦 Book a Delivery
+Book a Delivery
 Users can create a delivery by providing:
 - Pickup address
 - Delivery address
@@ -38,7 +35,7 @@ Users can create a delivery by providing:
 - Package description
 - Package weight
 
-### 💰 Quote and Review
+ Quote and Review
 Before confirming a delivery, users can review:
 - Pickup location
 - Delivery location
@@ -47,37 +44,37 @@ Before confirming a delivery, users can review:
 - Delivery fee
 - Estimated delivery time
 
-### 🔢 Delivery Confirmation
+ Delivery Confirmation
 After confirming a delivery:
 - A unique Arctic Move order number is generated
 - Delivery information is stored in the local database
 - A delivery confirmation screen is displayed
 - A PIN is displayed for delivery verification
 
-### 📋 My Orders
+ My Orders
 Users can view orders associated with their account.
 
 Orders are loaded from the Room database and separated into:
 - Active orders
 - Previous/delivered orders
 
-### 📍 Track Delivery
+ Track Delivery
 The application includes a delivery tracking interface for displaying delivery information and order status.
 
 REST API integration is being developed to allow tracking information to be retrieved from an external Arctic Move API.
 
-### 👤 Profile and Support
+ Profile and Support
 Users can:
 - View account information
 - Access support options
 - Log out of the application
 
-### ⚙️ Settings
+ Settings
 A dedicated settings interface is included to provide application preferences and configuration options.
 
----
 
-## 🌐 REST API
+
+ REST API
 
 Arctic Move includes a Retrofit networking layer for REST API communication.
 
@@ -90,7 +87,7 @@ The Android application currently defines support for the following API operatio
 | POST | `/deliveries` | Create a new delivery |
 | PUT | `/deliveries/{orderId}` | Update an existing delivery |
 
-### API Components
+ API Components
 
 The Android networking layer contains:
 
@@ -100,21 +97,21 @@ The Android networking layer contains:
 
 The REST server and full Android-to-API integration are currently under development.
 
----
 
-## 🗄️ Database
 
-Arctic Move uses **Room Database** for local data persistence.
+ Database
+
+Arctic Move uses *Room Database* for local data persistence.
 
 The database currently stores:
 
-### Users
+ Users
 - Email
 - Full name
 - Phone number
 - Password
 
-### Deliveries
+ Deliveries
 - Order ID
 - User email
 - Pickup address
@@ -131,7 +128,7 @@ Room DAOs are used to perform database operations such as inserting, retrieving 
 
 ---
 
-## 🛠️ Technologies Used
+ Technologies Used
 
 - Kotlin
 - Android Studio
@@ -146,11 +143,10 @@ Room DAOs are used to perform database operations such as inserting, retrieving 
 - Git
 - GitHub
 
----
+ 
+ Project Structure
 
-## 🏗️ Project Structure
-
-```text
+text
 com.example.arcticmove
 │
 ├── api
@@ -195,11 +191,9 @@ com.example.arcticmove
 └── MainActivity
 ```
 
----
+Delivery Workflow
 
-## 🔄 Delivery Workflow
-
-```text
+text
 Login / Register
        ↓
       Home
@@ -221,16 +215,16 @@ My Orders / Track Delivery
 
 ---
 
-## ▶️ Running the Application
+ Running the Application
 
-### Requirements
+ Requirements
 
 - Android Studio
 - Android SDK
 - Android emulator or compatible Android device
 - Internet connection for REST API functionality
 
-### Steps
+ Steps
 
 1. Clone the repository.
 2. Open the project in Android Studio.
@@ -241,7 +235,7 @@ My Orders / Track Delivery
 
 ---
 
-## 🧪 Testing
+Testing
 
 The application is tested during development using an Android emulator.
 
@@ -262,9 +256,9 @@ Current functional testing includes:
 
 Automated tests will be added to further verify important application functionality.
 
----
 
-## 🔮 Future Improvements
+
+ Future Improvements
 
 Planned improvements include:
 
@@ -280,7 +274,7 @@ Planned improvements include:
 
 ---
 
-## 🔒 Security Notice
+ Security Notice
 
 Arctic Move is an academic prototype.
 
@@ -288,16 +282,15 @@ Production deployment would require additional security measures including secur
 
 ---
 
-## 👨‍💻 Developer
+ Developer
 
 **Lethukuthula Dlomo**
 
 Diploma in Software Development
 
----
 
-## 📄 Project Status
+Project Status
 
-**Development in progress**
+Development in progress
 
 Core Android functionality, Room database persistence and the primary delivery workflow have been implemented. REST API development, API integration and automated testing are the next development stages.
